@@ -1,16 +1,3 @@
-const assertArraysEqual = function(actual, expected) {
-  if (eqArrays(actual, expected)) {
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
-  }
-}
-assertArraysEqual([1, 2, 3], [1, 2, 3]);
-assertArraysEqual([1, 2, 3], [3, 2, 1]);
-assertArraysEqual(["1", "2", "3"], ["1", "2", "3"]);
-assertArraysEqual(["1", "2", "3"], ["1", "2", 3]);
-assertArraysEqual([1, 2, 3], [1, 2]);
-
 const eqArrays = function (arr1, arr2) {
 	if (arr1.length !== arr2.length) {
 		return false;
@@ -22,21 +9,34 @@ const eqArrays = function (arr1, arr2) {
 	}
 	return true;
 };
-eqArrays([1, 2, 3], [1, 2, 3]);
-eqArrays([1, 2, 3], [3, 2, 1]);
-eqArrays(["1", "2", "3"], ["1", "2", "3"]);
-eqArrays(["1", "2", "3"], ["1", "2", 3]);
-assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
 
-const middle = function (array) {
-  const length = array.length;
-  if (length <= 2) {
-    return [];
-  } else if (length % 2 === 0) {
-    return [array[length / 2 - 1], array[length / 2]];
-  } else {
-    return [array[Math.floor(length / 2)]];
-  }
-}
-middle([1, 2, 3, 4]);
-middle([1, 2, 3, 4, 5, 6]);
+const assertArraysEqual = function (actual, expected) {
+	if (eqArrays(actual, expected)) {
+		console.log(`✅ Assertion Passed: ${actual} === ${expected}`);
+	} else {
+		console.log(`🛑 Assertion Failed: ${actual} !== ${expected}`);
+	}
+};
+
+const middle = function (arr) {
+	// Return an empty array if less than 3 elements
+	if (arr.length < 3) {
+		return [];
+	}
+
+	const middleIndex = Math.floor(arr.length / 2);
+
+	// If the array has an odd number of elements, return the middle element
+	if (arr.length % 2 !== 0) {
+		return [arr[middleIndex]];
+	}
+	// If the array has an even number of elements, return the two middle elements
+	else {
+		return [arr[middleIndex - 1], arr[middleIndex]];
+	}
+};
+
+console.log(middle([1, 2, 3, 4]));
+console.log(middle([1, 2, 3, 4, 5, 6]));
+console.log(middle([]));
+console.log(middle([5, 10, 15, 20, 25]));

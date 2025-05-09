@@ -1,13 +1,4 @@
-//const assertEqual = require("../head");
-import head from "../head.js";
-
-/*
-assertEqual(head([5, 6, 7]), 5);
-assertEqual(head([5]), 5);
-assertEqual(head([]), undefined); //An empty array
-assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
-*/
-
+const head = require('../head');
 const assert = require('chai').assert;
 
 describe("#head", () => {

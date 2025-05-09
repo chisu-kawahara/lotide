@@ -9,11 +9,10 @@ assertEqual(result[0], "Lighthouse"); // ensure first element is "Lighthouse"
 assertEqual(result[1], "Labs"); // ensure second element is "Labs"
 
 describe("#tail", () => {
-	it("ensure we get back two elements", () => {
-    assertEqual(result.length, 2);
-  });
-  it("ensure first element is 'Lighthouse'", () => {
-    assertEqual(result[0], "Lighthouse");
+  it("returns the tail of an array", () => {
+    const result = tail(["Hello", "Lighthouse", "Labs"]);
+    assert.strictEqual(result.length, 2);
+    assert.strictEqual(result[0], "Lighthouse");
+    assert.strictEqual(result[1], "Labs");
   });
 });
-

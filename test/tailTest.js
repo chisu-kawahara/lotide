@@ -1,5 +1,6 @@
 const assertEqual = require("../assertEqual");
 const tail = require('../tail');
+const assert = require('chai').assert;
 
 
 //TEST CODE
@@ -9,7 +10,7 @@ assertEqual(result[0], "Lighthouse"); // ensure first element is "Lighthouse"
 assertEqual(result[1], "Labs"); // ensure second element is "Labs"
 
 describe("#tail", () => {
-  it("returns the tail of an array", () => {
+  it("returns the correct tail of the array", () => {
     const result = tail(["Hello", "Lighthouse", "Labs"]);
     assert.strictEqual(result.length, 2);
     assert.strictEqual(result[0], "Lighthouse");

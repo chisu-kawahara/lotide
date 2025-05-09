@@ -1,4 +1,4 @@
-const assertEqual = require("./assertEqual");
+const assertEqual = require("../tail");
 
 
 const tail = function (array) {

@@ -16,6 +16,7 @@ const without = require('./without');
 const flatten = require('./flatten');
 const map = require('./map');
 
+// Exporting all the functions for easier access
 module.exports = {
   head,
   tail,

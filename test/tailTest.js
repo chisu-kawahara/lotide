@@ -2,7 +2,7 @@ const assertEqual = require("../assertEqual");
 const tail = require('../tail');
 const assert = require('chai').assert;
 
-// TEST CODE
+// TEST Cases
 describe("#tail", () => {
   it("returns the correct tail of the array", () => {
     const result = tail(["Hello", "Lighthouse", "Labs"]);

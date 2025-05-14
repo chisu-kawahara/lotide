@@ -2,6 +2,8 @@ const eqArrays = require("./eqArrays");
 const assertEqual = require("./assertEqual");
 const assertArraysEqual = require("./assertArraysEqual");
 
+
+// The function takes an array as input and flattens it by removing any nested arrays.
 const flatten = function(arr) {
   let result = [];
 

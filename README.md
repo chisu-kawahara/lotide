@@ -26,6 +26,6 @@ This project was created and published by me as part of my learnings at Lighthou
 
 The following functions are currently implemented:
 
-- `function1(...)`: description
-- `function2(...)`: description
-- `function3(...)`: description
+- `function1(...)`: Description of what function1 does.
+- `function2(...)`: Description of what function2 does.
+- `function3(...)`: Description of what function3 does.

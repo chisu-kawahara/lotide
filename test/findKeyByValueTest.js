@@ -1,6 +1,7 @@
 const findKeyByValue = require('../findKeyByValue');
 
-// Test cases
+
+// Test code
 const bestTVShowsByGenre = {
 	sci_fi: "The Expanse",
 	comedy: "Brooklyn Nine-Nine",

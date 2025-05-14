@@ -1,7 +1,6 @@
 const assertEqual = require("./assertEqual");
 
-// Function to count the occurrences of each letter in a string
-// and return an object with the letter counts
+
 const findKeyByValue = function (object, value) {
 	const keys = Object.keys(object); // Get all the keys first
 

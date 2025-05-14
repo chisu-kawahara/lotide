@@ -1,5 +1,4 @@
-const eqArrays = require("./eqArrays");
-const assertArraysEqual = require("./assertArraysEqual");
+
 
 const middle = function (arr) {
 	// Return an empty array if less than 3 elements

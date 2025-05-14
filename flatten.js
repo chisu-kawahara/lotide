@@ -28,3 +28,5 @@ assertArraysEqual(flatten([["a", "b"], ["c", "d"], "e"]), [
 	"e",
 ]); // Flatten nested arrays
 assertArraysEqual(flatten([1, [2, 3], [4, [5, 6]], 7]), [1, 2, 3, 4, [5, 6], 7]); // Deeply nested arrays
+
+module.exports = flatten;

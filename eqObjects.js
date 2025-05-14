@@ -34,7 +34,7 @@ const eqObjects = function (object1, object2) {
 
 
 
-// Test (Primitives)
+// Test Cases (Primitives)
 const shirtObject = { color: "red", size: "medium" };
 const anotherShirtObject = { size: "medium", color: "red" };
 assertEqual(eqObjects(shirtObject, anotherShirtObject), true);

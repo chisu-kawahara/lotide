@@ -2,7 +2,7 @@ const eqObjects = require('../eqObjects');
 const assertEqual = require('../assertEqual');
 const eqArrays = require('../eqArrays');
 
-// Test (Primitives)
+// Test Cases (Primitives)
 const shirtObject = { color: "red", size: "medium" };
 const anotherShirtObject = { size: "medium", color: "red" };
 assertEqual(eqObjects(shirtObject, anotherShirtObject), true);

@@ -1,22 +1,25 @@
 {
-  "name": "lotide",
-  "version": "1.0.0",
-  "description": "",
-  "main": "assertArraysEqual.js",
-  "directories": {
-    "test": "test"
-  },
-  "scripts": {
-    "test": "mocha"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/chisu-kawahara/lotide.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/chisu-kawahara/lotide/issues"
-  },
-  "homepage": "https://github.com/chisu-kawahara/lotide#readme"
+	"name": "@chisukawahara/lotide",
+	"version": "1.0.0",
+	"description": "library for assertion functions",
+	"main": "index.js",
+	"directories": {
+		"test": "test"
+	},
+	"scripts": {
+		"test": "mocha"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/chisu-kawahara/lotide.git"
+	},
+	"author": {
+		"name": "Chisu Kawahara",
+		"email": "chisu.kawahara@gmail.com"
+	},
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/chisu-kawahara/lotide/issues"
+	},
+	"homepage": "https://github.com/chisu-kawahara/lotide#readme"
 }

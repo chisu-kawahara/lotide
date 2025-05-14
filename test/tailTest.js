@@ -18,10 +18,10 @@ describe("#tail", () => {
 });
 
 //Test cases
-assertEqual(result.length, 2); // ensure we get back two elements
-assertEqual(result[0], "Lighthouse"); // ensure first element is "Lighthouse"
-assertEqual(result[1], "Labs"); // ensure second element is "Labs"
-assertEqual(result[2], undefined); // ensure third element is undefined
+asseertStrictEqual(tail(["Hello", "Lighthouse", "Labs"]).length, 2); // ensure we get back two elements
+assertStrictEqual(tail(["Hello", "Lighthouse", "Labs"])[0], "Lighthouse"); // ensure first element is "Lighthouse"
+assertStrictEqual(tail(["Hello", "Lighthouse", "Labs"])[1], "Labs"); // ensure second element is "Labs"
+assertEqual(tail(["Hello", "Lighthouse", "Labs"]).length, 2); // ensure we get back two elements
 
 const words = ["Hello", "Lighthouse", "Labs"];
 tail(words);

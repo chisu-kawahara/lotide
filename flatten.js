@@ -2,20 +2,20 @@ const eqArrays = require("./eqArrays");
 const assertEqual = require("./assertEqual");
 const assertArraysEqual = require("./assertArraysEqual");
 
-const flatten = function (arr) {
-	let result = [];
+const flatten = function(arr) {
+  let result = [];
 
-	for (let i = 0; i < arr.length; i++) {
-		if (Array.isArray(arr[i])) {
-			// If the element is an array, recursively flatten it
-			result = result.concat(flatten(arr[i]));
-		} else {
-			// If it's not an array, add it to the result
-			result.push(arr[i]);
-		}
-	}
+  for (let i = 0; i < arr.length; i++) {
+    if (Array.isArray(arr[i])) {
+      // Concatenate the elements of the nested array
+      result = result.concat(arr[i]);
+    } else {
+      // If it's not an array, add it directly to the result
+      result.push(arr[i]);
+    }
+  }
 
-	return result;
+  return result;
 };
 
 // TEST CODE

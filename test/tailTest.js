@@ -11,17 +11,12 @@ assert.strictEqual(result[1], "Labs"); // ensure second element is "Labs"
 describe("#tail", () => {
   it("returns the correct tail of the array", () => {
     const result = tail(["Hello", "Lighthouse", "Labs"]);
-    assert.strictEqual(result.length, 2);
-    assert.strictEqual(result[0], "Lighthouse");
-    assert.strictEqual(result[1], "Labs");
+    assertStrictEqual(tail(["Hello", "Lighthouse", "Labs"]).length, 2); // ensure we get back two elements
+    assertStrictEqual(tail(["Hello", "Lighthouse", "Labs"])[0], "Lighthouse"); // ensure first element is "Lighthouse"
+    assertStrictEqual(tail(["Hello", "Lighthouse", "Labs"])[1], "Labs"); // ensure second element is "Labs"
+    assertEqual(tail(["Hello", "Lighthouse", "Labs"]).length, 2); // ensure we get back two elements
   });
 });
-
-//Test cases
-asseertStrictEqual(tail(["Hello", "Lighthouse", "Labs"]).length, 2); // ensure we get back two elements
-assertStrictEqual(tail(["Hello", "Lighthouse", "Labs"])[0], "Lighthouse"); // ensure first element is "Lighthouse"
-assertStrictEqual(tail(["Hello", "Lighthouse", "Labs"])[1], "Labs"); // ensure second element is "Labs"
-assertEqual(tail(["Hello", "Lighthouse", "Labs"]).length, 2); // ensure we get back two elements
 
 const words = ["Hello", "Lighthouse", "Labs"];
 tail(words);

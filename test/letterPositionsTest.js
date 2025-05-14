@@ -4,7 +4,7 @@ const letterPositions = require('../letterPositions');
 
 
 
-// Test cases
+// Test codes
 const results = letterPositions("hello");
 assertArraysEqual(results.e, [1]); // 'e' is at index 1
 // You can add more test cases for other letters in "hello"

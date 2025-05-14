@@ -6,7 +6,6 @@ const findKey = function(obj, callback) {
       return key; // Return the first key where callback is truthy
     }
   }
-  return undefined; // Return undefined if no matching key is found
 };
 
 // Test cases

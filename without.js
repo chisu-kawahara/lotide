@@ -7,22 +7,14 @@ const without = function(array, itemsToRemove) {
   const result = [];
 
   for (let i = 0; i < array.length; i++) {
-    let shouldRemove = false;
-
-    for (let j = 0; j < itemsToRemove.length; j++) {
-      if (array[i] === itemsToRemove[j]) {
-        shouldRemove = true;
-        break;
-      }
-    }
-
-    if (!shouldRemove) {
+    if (!itemsToRemove.includes(array[i])) {
       result.push(array[i]);
     }
   }
 
   return result;
 };
+
 //TEST CODE
 const words = ["hello", "world", "lighthouse"];
 assertArraysEqual(without([1, 2, 3], [1]), [2, 3]);

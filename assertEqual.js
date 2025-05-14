@@ -1,4 +1,4 @@
-// Test for assertObjectsEqual function
+
 // Function to compare two objects for equality
 
 const assertEqual = function (actual, expected) {

@@ -6,9 +6,9 @@ const assert = require('chai').assert;
 describe("#tail", () => {
   it("returns the correct tail of the array", () => {
     const result = tail(["Hello", "Lighthouse", "Labs"]);
-    assert.strictEqual(tail(["Hello", "Lighthouse", "Labs"]).length, 2); // ensure we get back two elements
-    assert.strictEqual(tail(["Hello", "Lighthouse", "Labs"])[0], "Lighthouse"); // ensure first element is "Lighthouse"
-    assert.strictEqual(tail(["Hello", "Lighthouse", "Labs"])[1], "Labs"); // ensure second element is "Labs"
+    assert.strictEqual(result.length, 2);
+    assert.strictEqual(result[0], "Lighthouse");
+    assert.strictEqual(result[1], "Labs");
     assert.strictEqual(tail(["test"]).length, 0);
     assert.strictEqual(tail([]).length, 0);
     assert.strictEqual(tail([1, 2, 3]).length, 2); // ensure we get back two elements

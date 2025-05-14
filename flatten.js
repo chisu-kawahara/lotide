@@ -5,7 +5,7 @@ const assertArraysEqual = require("./assertArraysEqual");
 const flatten = function(arr) {
   let result = [];
 
-  for (const i = 0; i < arr.length; i++) {
+  for (let i = 0; i < arr.length; i++) {
     if (Array.isArray(arr[i])) {
       // Concatenate the elements of the nested array
       result = result.concat(arr[i]);

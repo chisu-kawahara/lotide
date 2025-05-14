@@ -20,6 +20,4 @@ const findKeyByValue = function (object, value) {
 	return undefined;
 };
 
-
-
 module.exports = findKeyByValue;

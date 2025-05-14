@@ -1,5 +1,6 @@
-//const assertArraysEqual = require("../assertArraysEqual");
+const assertArraysEqual = require("../assertArraysEqual");
 const middle = require("../middle");
+
 const assert = require('chai').assert;
 
 
@@ -17,4 +18,10 @@ describe("#middle", () => {
     assert.deepEqual(middle([1]), []);
   });
 });
+
+//Test cases
+assertArraysEqual(middle([1, 2, 3]), [2]);
+assertArraysEqual(middle([1, 2, 3, 4]), [2, 3]);
+assertArraysEqual(middle([1, 2]), []);
+assertArraysEqual(middle([1]), []);
 

@@ -2,7 +2,7 @@ const without = require("../without");
 const assertArrayEqual = require("../assertArraysEqual");
 
 
-//TEST CODE
+//TEST cases
 assertArraysEqual(without([1, 2, 3], [1]), [2, 3]);
 assertArraysEqual(without(["1", "2", "3"], [1, 2, "3"]), ["1", "2"]);
 assertArraysEqual(without(words, ["lighthouse"]), ["hello", "world"]);

@@ -5,6 +5,12 @@ const countLetters = function (str) {
 	const letterCounts = {};
 
 	for (const letter of str) {
+		if (letter !== ' ') {
+			// existing code
+		}
+	}
+
+	for (const letter of str) {
 		if (letterCounts[letter]) {
 			letterCounts[letter] += 1;
 		} else {
@@ -13,7 +19,5 @@ const countLetters = function (str) {
 	}
 	return letterCounts;
 };
-
-
 
 module.exports = countLetters;

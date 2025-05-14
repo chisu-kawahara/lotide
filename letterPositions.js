@@ -6,8 +6,7 @@ const letterPositions = function (str) {
 	const positions = {};
 
 	for (let i = 0; i < str.length; i++) {
-		const letter = str[i];
-
+		let letter = str[i];
 		if (letter !== " ") {
 			// Skip spaces
 			if (positions[letter]) {

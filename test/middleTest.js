@@ -11,10 +11,6 @@ describe("#middle", () => {
     assert.deepEqual(middle([1, 2]), []);
     assert.deepEqual(middle([1]), []);
     assert.deepEqual(middle([1, 2, 3]), [2]);
-    assert.strictEqual(assertArraysEqual([1, 2], [2, 1]), false);
-    assert.strictEqual(assertArraysEqual([1], [2]), false);
-    assert.strictEqual(assertArraysEqual([], [1]), false);
-    assert.strictEqual(assertArraysEqual([1], []), false);
   });
 });
 

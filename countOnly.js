@@ -5,7 +5,6 @@ const countOnly = function (allItems, itemsToCount) {
 	//loop through all items in the array
 
   for (const item of allItems) {
-		console.log(item);
     if (itemsToCount[item]) {
 		  if (results[item]) {
 			results[item] += 1;

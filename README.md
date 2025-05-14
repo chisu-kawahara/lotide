@@ -1,6 +1,6 @@
 # Lotide
 
-A mini clone of the [Lodash](https://lodash.com) library.
+Lotide is a utility library built in JavaScript, offering a collection of functions to simplify common programming tasks, particularly around arrays, objects, and strings. It mimics some of the core functionality of the Lodash library but is implemented from scratch to demonstrate foundational JavaScript concepts.
 
 ## Purpose
 

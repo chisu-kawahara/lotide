@@ -12,11 +12,11 @@ This project was created and published by me as part of my learnings at Lighthou
 
 **Install it:**
 
-`npm install @chisu.kawahara/lotide`
+`npm install @chisukawahara/lotide`
 
 **Require it:**
 
-`const _ = require('@chisu.kawahara/lotide');`
+`const _ = require('@chisukawahara/lotide');`
 
 **Call it:**
 
@@ -26,6 +26,7 @@ This project was created and published by me as part of my learnings at Lighthou
 
 The following functions are currently implemented:
 
+function description
 - `function1(...)`: Description of what function1 does.
 - `function2(...)`: Description of what function2 does.
 - `function3(...)`: Description of what function3 does.

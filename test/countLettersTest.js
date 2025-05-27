@@ -1,4 +1,5 @@
 const countLetters = require('../countLetters');
+const assertEqual = require('../assertEqual');
 
 // TEST CODE
 assertEqual(countLetters("hello").h, 1); // h: 1

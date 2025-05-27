@@ -1,8 +1,9 @@
 const without = require("../without");
-const assertArrayEqual = require("../assertArraysEqual");
+const assertArraysEqual = require("../assertArraysEqual");
 
 
 //TEST cases
+const words = ["hello", "world", "lighthouse"]
 assertArraysEqual(without([1, 2, 3], [1]), [2, 3]);
 assertArraysEqual(without(["1", "2", "3"], [1, 2, "3"]), ["1", "2"]);
 assertArraysEqual(without(words, ["lighthouse"]), ["hello", "world"]);

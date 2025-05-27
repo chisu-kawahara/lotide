@@ -29,7 +29,7 @@ The following functions are currently implemented:
 - `head`: This function is used to retrieve the first element from the array.
 - `tail`: This function is used to retrieve every element except the head (first element) of the arra.
 - `middle`: This function is useed to return an array with only the middle element(s) of the provided array.
-- `assertEqual`: This function was implemented to show success / failure messages printed to the console, to check if our functions are behaving as expected. It compares primitive types (like numbers and strings)
+- `assertEqual`: This function was implemented to show success / failure messages printed to the console, to check if our functions are behaving as expected. It compares primitive types (like numbers and strings).
 - `assertArraysEqual`: This function was used to assert that two arrays are equal.
 - `assertObjectsEqual`: This function was implemented to test functions that return objects.
 - `eqArrays`: This function was used to compare two arrays for a match.
